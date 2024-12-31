@@ -1,5 +1,6 @@
 <?php
 
+use App\Application;
 use App\Router;
 
 function isAction($action){
@@ -8,4 +9,7 @@ function isAction($action){
   }
 
   return false;
+}
+function app(){
+  return new Application;
 }
